@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #0DCAF0;
+}
+.home{
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/beautiful-view-clouds-mountain-clear-sky-shot-from-airplane.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* -------------------------------------------------navbar--------------------------------------------------------- */
+header{
+    background-color: #262936;
+    color: #fff;
+
+}
+.nav-link{
+    color: #fff !important;
+    margin: 15px 15px;
+    padding: 5px 20px !important;
+    transition: 0.3s ease;
+    font-weight: 400;
+    margin-left: 10px !important;
+    font-size: 16px !important;
+    border: 2px solid transparent;
+    border-radius: 30px;
+
+
+
+}
+.nav-link:hover, .active{
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color) !important;
+    border-radius: 30px;
+}
+
+.weather-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.weather-desc {
+    font-size: 0.7142857143em;
+    color: #bfc1c8;
+}
+
+.logo-text{
+    line-height: 5px;
+}
+
+.navbar-toggler:focus{
+    border: 2px solid #0DCAF0 !important;
+    box-shadow: none;
+}
+.navbar-toggler span{
+    color: #0DCAF0;
+}
+
+/* -------------------------------------------------home--------------------------------------------------------- */
+/* -------------------------------------------------search bar--------------------------------------------------------- */
+
+.search-input{
+    background-color: #1e202b;
+    color: white;
+    height: 45px;
+    border: none;
+    border-radius: 30px;
+    padding: 5px 12px;
+    outline: none;
+
+}
+
+.search-btn {
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+    border-radius: 30px;
+    color: white;
+    background: var(--primary-color);
+    font-size: 16px;
+    border: var(--primary-color);
+}
+
+.search-btn:active{
+    transform: scale(.97);
+}
+/* -------------------------------------------------forecast--------------------------------------------------------- */
+
+.item{
+    height: 60vh;
+    background: linear-gradient(0deg, var(--primary-color), rgba(74, 204, 255, 0.2));
+    border-radius: 5% 5% 19% 50% / 20% 35% 58% 41% ;
+    padding: 0px;
+
+}
+.forecast-start{
+    background-color: rgb(13, 202, 240, 0.6);
+}
+
+/* -------------------------------------------------forecast table1--------------------------------------------------------- */
+
+.num{
+    font-size: 5.5rem;
+    font-weight: 600;
+}
+.location{
+    color: #7fcdec;
+
+}
+.w-desc{
+    color: #98d5ec;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.forecast-content span{
+    color: #bfc1c8;
+}
+.degre{
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* -------------------------------------------------footer--------------------------------------------------------- */
+
+footer{
+    background-color: #262936;
+    color: #fff;
+    padding: 20px;
+}
+.copy-right{
+    color: #bfc1c8;
+    font-weight: 400;
+    font-size: 15px;
+}
+.icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: #1e202b;
+    transition: 0.3s ease;
+    font-size: 18px;
+    margin:0px 8px;
+    text-decoration: none;
+}
+.icon a:hover{
+    color: white;
+    background-color: var(--primary-color);
+}
